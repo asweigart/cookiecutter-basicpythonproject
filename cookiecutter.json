@@ -5,6 +5,5 @@
     "author_email": "susie@example.com",
     "github_username": "susieexample",
     "project_version": "0.0.1",
-    "project_short_description": "A basic Python project.",
-    "pypi_username": "{{ cookiecutter.github_username }}"
+    "project_short_description": "A basic Python project."
 }
