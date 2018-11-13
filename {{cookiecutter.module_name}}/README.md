@@ -18,4 +18,4 @@ TODO - fill this in later
 Contribute
 ----------
 
-If you'd like to contribute to {{ cookiecutter.project_name }}, check out {{ https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.module_name }}
+If you'd like to contribute to {{ cookiecutter.project_name }}, check out https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.module_name }}
