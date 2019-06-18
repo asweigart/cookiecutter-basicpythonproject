@@ -1,4 +1,4 @@
-import re
+import re, io
 from setuptools import setup, find_packages
 
 # Load version from module (without loading the whole module)
@@ -7,7 +7,7 @@ with open('src/{{ cookiecutter.module_name }}/__init__.py', 'r') as fo:
                         fo.read(), re.MULTILINE).group(1)
 
 # Read in the README.md for the long description.
-with open('README.md') as fo:
+with io.open('README.md', encoding='utf-8') as fo:
     long_description = fo.read()
 
 setup(
