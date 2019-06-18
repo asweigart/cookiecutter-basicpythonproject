@@ -18,7 +18,7 @@ setup(
     author_email='{{ cookiecutter.author_email }}',
     description=('''{{ cookiecutter.project_short_description }}'''),
     long_description=long_description,
-    long_description_content_type="text/markdown",
+    long_description_content_type='text/markdown',
     license='GPLv3+',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
