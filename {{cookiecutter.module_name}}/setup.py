@@ -19,7 +19,7 @@ setup(
     description=('''{{ cookiecutter.project_short_description }}'''),
     long_description=long_description,
     long_description_content_type='text/markdown',
-    license='GPLv3+',
+    license='MIT',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     test_suite='tests',
