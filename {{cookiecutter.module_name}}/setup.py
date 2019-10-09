@@ -1,12 +1,17 @@
-import re, io
+import io
+import os
+import re
 from setuptools import setup, find_packages
 
-# Load version from module (without loading the whole module)
+scriptFolder = os.path.dirname(os.path.realpath(__file__))
+os.chdir(scriptFolder)
+
+# Find version info from module (without importing the module):
 with open('src/{{ cookiecutter.module_name }}/__init__.py', 'r') as fo:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
                         fo.read(), re.MULTILINE).group(1)
 
-# Read in the README.md for the long description.
+# Use the README.md content for the long description:
 with io.open('README.md', encoding='utf-8') as fo:
     long_description = fo.read()
 
