@@ -7,13 +7,13 @@ scriptFolder = os.path.dirname(os.path.realpath(__file__))
 os.chdir(scriptFolder)
 
 # Find version info from module (without importing the module):
-with open('src/{{ cookiecutter.module_name }}/__init__.py', 'r') as fo:
+with open('src/{{ cookiecutter.module_name }}/__init__.py', 'r') as fileObj:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
-                        fo.read(), re.MULTILINE).group(1)
+                        fileObj.read(), re.MULTILINE).group(1)
 
 # Use the README.md content for the long description:
-with io.open('README.md', encoding='utf-8') as fo:
-    long_description = fo.read()
+with io.open('README.md', encoding='utf-8') as fileObj:
+    long_description = fileObj.read()
 
 setup(
     name='{{ cookiecutter.project_name }}',
