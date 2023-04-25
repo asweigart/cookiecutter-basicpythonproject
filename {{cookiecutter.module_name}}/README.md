@@ -1,21 +1,22 @@
-{{ cookiecutter.project_name }}
-======
+# {{ cookiecutter.project_name }}
+
 
 {{ cookiecutter.project_short_description }}
 
-Installation
-------------
+## Installation
 
-To install with pip, run:
+To install with pip on macOS or Linux, run:
 
-    pip install {{ cookiecutter.module_name }}
+    python3 -m pip install {{ cookiecutter.module_name }}
 
-Quickstart Guide
-----------------
+To install with pip on Windows, run:
+
+    py -m pip install {{ cookiecutter.module_name }}
+
+## Quickstart Guide
 
 TODO - fill this in later
 
-Contribute
-----------
+## Contribute
 
 If you'd like to contribute to {{ cookiecutter.project_name }}, check out https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.module_name }}
