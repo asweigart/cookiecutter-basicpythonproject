@@ -7,7 +7,7 @@ name = "{{ cookiecutter.project_name }}"
 authors = [
     {name = "{{ cookiecutter.author_name }}", email = "{{ cookiecutter.author_email }}"},
 ]
-description = {{ cookiecutter.project_short_description }}
+description = "{{ cookiecutter.project_short_description }}"
 readme = "README.md"
 # keywords = ["TODO_KEYWORD_1", "TODO_KEYWORD_2"]
 license = {file = "LICENSE"}
